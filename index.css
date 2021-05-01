@@ -1,0 +1,8 @@
+main {
+  display: grid;
+  align-items: center;
+
+  margin-bottom: 0.5rem;
+
+  position: relative;
+}
