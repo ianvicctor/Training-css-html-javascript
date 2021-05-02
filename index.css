@@ -1,8 +1,47 @@
-main {
+.box {
   display: grid;
-  align-items: center;
 
-  margin-bottom: 0.5rem;
-
-  position: relative;
+  grid-template-areas: 
+  "header header header header" "header header header header"
+  "aside aside main main"
+  "aside aside main main"
 }
+
+#first-part {
+  grid-area: header;
+  
+  background-color: red;
+}
+
+#second-part {
+  grid-area: aside;
+  
+  background-color: blue;
+}
+
+#third-part {
+  grid-area: main;
+
+  background-color: green;
+}
+
+
+/* #second-part, #third-part {
+  width: 300px;
+  height: 300px;
+  
+  display: inline-block;
+  position: relative;
+
+  
+}
+
+#second-part {
+  background-color: blue;
+  
+}
+
+#third-part {
+  background-color:green;
+  float: right;
+} */
