@@ -1,28 +1,25 @@
-.box {
+.container {
   display: grid;
-
-  grid-template-areas: 
-  "header header header header" "header header header header"
-  "aside aside main main"
-  "aside aside main main"
+  grid-template-columns: 4fr;
+  grid-template-rows: 200px 100px 100px;
 }
 
-#first-part {
-  grid-area: header;
-  
+.first-part {
   background-color: red;
+
+  text-align: center;
 }
 
-#second-part {
-  grid-area: aside;
-  
+.second-part {
   background-color: blue;
+
+  text-align: center;
 }
 
-#third-part {
-  grid-area: main;
-
+.third-part {
   background-color: green;
+
+  text-align: center;
 }
 
 
