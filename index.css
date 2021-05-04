@@ -1,25 +1,33 @@
 .container {
   display: grid;
-  grid-template-columns: 4fr;
-  grid-template-rows: 200px 100px 100px;
+  grid-template-columns: 1fr 1fr;
+  
 }
 
 .first-part {
   background-color: red;
 
   text-align: center;
+
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
 
 .second-part {
   background-color: blue;
 
   text-align: center;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .third-part {
   background-color: green;
 
   text-align: center;
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 
 
