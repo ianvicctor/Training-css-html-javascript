@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(180, 177, 177);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header ---------------------------------------------- */
+header {
+  text-align: center;
+  display: block;
+}
+
+.weight-normal {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.weight-bolder {
+  font-weight: bold;
+}
+
+/* Main ---------------------------------------------- */
+main {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(180, 177, 177);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.team-builder {
+  background: hsl(0, 0%, 98%);
+  height: 40vh;
+  width: 30vw;
+  padding: 1rem 2rem;
+
+  border-radius: 0.5rem;
+  border-color: hsl(0, 78%, 62%);
+  border-top-style: solid;
+}
+
+.supervisor {
+    background: hsl(0, 0%, 98%);
+    height: 40vh;
+    width: 30vw;
+    padding: 1rem 2rem;
+  
+    border-radius: 0.5rem;
+    border-color: hsl(180, 62%, 55%);
+    border-top-style: solid;
+  }
+
+  .calculator {
+    background: hsl(0, 0%, 98%);
+    height: 40vh;
+    width: 30vw;
+    padding: 1rem 2rem;
+  
+    border-radius: 0.5rem;
+    border-color: hsl(212, 86%, 64%);
+    border-top-style: solid;
+  }
+
+  .karma {
+    background: hsl(0, 0%, 98%);
+    height: 40vh;
+    width: 30vw;
+    padding: 1rem 2rem;
+  
+    border-radius: 0.5rem;
+    border-color: hsl(34, 97%, 64%);
+    border-top-style: solid;
+  }
+
