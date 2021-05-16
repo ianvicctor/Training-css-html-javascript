@@ -3,83 +3,126 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: rgb(180, 177, 177);
+  background: white;
   font-family: "Poppins", sans-serif;
 }
 
 /* Header ---------------------------------------------- */
 header {
   text-align: center;
-  display: block;
+  margin-top: 10vh;
 }
 
 .weight-normal {
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
+  
+  margin-bottom: -4px;
 }
 
 .weight-bolder {
   font-weight: bold;
+  font-size: 1.98em;
+
+  margin-top: 1px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
 }
 
 /* Main ---------------------------------------------- */
 main {
   width: 100vw;
   height: 100vh;
-  background: rgb(180, 177, 177);
-
-  justify-content: center;
-  align-items: center;
+  background: white;
 }
 
 .container {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 8vh;
 }
 
 .team-builder {
   background: hsl(0, 0%, 98%);
-  height: 40vh;
-  width: 30vw;
+  height: 35vh;
+  width: 25vw;
   padding: 1rem 2rem;
 
   border-radius: 0.5rem;
   border-color: hsl(0, 78%, 62%);
   border-top-style: solid;
+
+  position: absolute;
+  top: 35vh;
+  left: 35vw;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .supervisor {
-    background: hsl(0, 0%, 98%);
-    height: 40vh;
-    width: 30vw;
-    padding: 1rem 2rem;
-  
-    border-radius: 0.5rem;
-    border-color: hsl(180, 62%, 55%);
-    border-top-style: solid;
-  }
+  background: hsl(0, 0%, 98%);
+  height: 35vh;
+  width: 25vw;
+  padding: 1rem 2rem;
 
-  .calculator {
-    background: hsl(0, 0%, 98%);
-    height: 40vh;
-    width: 30vw;
-    padding: 1rem 2rem;
-  
-    border-radius: 0.5rem;
-    border-color: hsl(212, 86%, 64%);
-    border-top-style: solid;
-  }
+  border-radius: 0.5rem;
+  border-color: hsl(180, 62%, 55%);
+  border-top-style: solid;
 
-  .karma {
-    background: hsl(0, 0%, 98%);
-    height: 40vh;
-    width: 30vw;
-    padding: 1rem 2rem;
-  
-    border-radius: 0.5rem;
-    border-color: hsl(34, 97%, 64%);
-    border-top-style: solid;
-  }
+  position: absolute;
+  top: 60vh;
+  left: 2vw;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.calculator {
+  background: hsl(0, 0%, 98%);
+  height: 35vh;
+  width: 25vw;
+  padding: 1rem 2rem;
+
+  border-radius: 0.5rem;
+  border-color: hsl(212, 86%, 64%);
+  border-top-style: solid;
+
+  position: absolute;
+  top: 60vh;
+  left: 68vw;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.karma {
+  background: hsl(0, 0%, 98%);
+  height: 35vh;
+  width: 25vw;
+  padding: 1rem 2rem;
+
+  border-radius: 0.5rem;
+  border-color: hsl(34, 97%, 64%);
+  border-top-style: solid;
+
+  position: absolute;
+  top: 80vh;
+  left: 35vw;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img  {
+  display: flex;
+
+  float: right;
+  /*margin-left: 20vw;*/
+}
+
+.container p {
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+}
 
