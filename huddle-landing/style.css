@@ -1,8 +1,85 @@
-* {
+html,
+body {
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 2rem;
   box-sizing: border-box;
-  background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat right top fixed;
+  background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat fixed;
+  background-position: -100px -110px;
+}
+
+body {
+    width: 96vw;
+    height: 97vh;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Header ---------------------------------------------- */
+header {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 3vw;
+}
+
+/* Container ---------------------------------------------- */
+.container {
+    display: flex;
+}
+
+
+/* Main-image ---------------------------------------------- */
+#ilustration {
+    margin-top: 5vh;
+
+    width: 600px;
+    height: auto;
+}
+
+/* Main-texts ---------------------------------------------- */
+.text {
+    color: white;
+    margin: 7vh 0vw 0vh 5vw;
+}
+
+.text h1 {
+    font-size:30px;
+    font-weight: bolder;
+}
+
+/* Main-buttons & Links ------------------------------------- */
+.button {
+        display: inline-block;
+
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        
+        background: white;
+        padding: 10px 50px;
+        color: hsl(257, 40%, 49%);
+        border-radius: 2rem;
+        margin-bottom: 10px;  
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Footer --------------------------------------------------- */
+footer {
+    display: inline-block;
+    margin-left: 78vw;
+}
+
+/* Footer-Icons&Links --------------------------------------- */
+footer img {
+    width: 20px;
+    height: auto;  
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4rem;
+
+    filter: invert(1);
+}
+
+
