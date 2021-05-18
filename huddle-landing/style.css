@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat right top fixed;
+}
+
+/* Header ---------------------------------------------- */
