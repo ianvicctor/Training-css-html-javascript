@@ -1,3 +1,8 @@
+/* Global ---------------------- */
+:root {
+  --color-pink: hsl(0, 36%, 70%);
+}
+
 html,
 body {
   padding: 0;
@@ -20,46 +25,84 @@ main {
 .card-left {
   grid-area: L;
   width: 55vw;
+  background: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
 }
 
-.card-left .logo{
-    display: flex;
-    margin: 70px 0 0 130px;
+.card-left .logo {
+  display: flex;
+  margin: 50px 0 0 130px;
 }
 
-.card-left h1 {
-    font-size: 45pt;
+.card-left #text-pink {
+  color: var(--color-pink);
+  font-size: 45pt;
+  font-weight: 100;
+  letter-spacing: 15px;
 
-    margin: 100px 0 0 130px;
+  margin: 100px 0 0 130px;
+}
+
+.card-left #text-normal {
+  font-size: 45pt;
+  letter-spacing: 15px;
+
+  margin: 0 0 0 130px;
 }
 
 .card-left p {
+  color: var(--color-pink);
+  line-height: 1.6;
 
-
-    margin: 30px 0 0 130px;
+  margin: 30px 0 0 130px;
 }
 
-.card-left form {
-    margin: 40px 0 0 130px;
+/* Card-left-input ---------------------- */
+.card-left #input-email {
+  display: inline-flex;
+  border-radius: 2rem;
+  border: 2px var(--color-pink) solid;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  opacity:  0.5;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 2rem;
+  width: 25vw;
+  margin: 40px 0 0 130px;
+}
+
+input::placeholder {
+  color: var(--color-pink);
+  font-weight: bolder;
+  font-size: 11pt;
+}
+
+/* Card-left-button ---------------------- */
+.card-left .button {
+  display: inline;
 }
 
 .card-left .arrow {
-    width: 20px;
-    height: auto;
-
-    filter: invert(1);
+  display: inline;
+  background: var(--color-pink);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-top: 50px;
+  margin-left: -70px;
+  width: 25px;
+  height: 20px;
+  
+	filter: invert(0);
 }
 
-.card-left a {
-    background: hsl(0, 6%, 24%);
-}
 
 /* Card-right ---------------------- */
 .card-right {
   grid-area: R;
 }
 
-.card-right img{
-    width: 100%;
-    height: 100%;
+.card-right img {
+  width: 100%;
+  height: 100%;
 }
