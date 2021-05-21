@@ -25,7 +25,8 @@ main {
 .card-left {
   grid-area: L;
   width: 55vw;
-  background: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+  background: -webkit-linear-gradient(left, hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+  background: linear-gradient(to right, hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
 }
 
 .card-left .logo {
@@ -43,6 +44,7 @@ main {
 }
 
 .card-left #text-normal {
+  color: hsl(0, 6%, 24%);
   font-size: 45pt;
   letter-spacing: 15px;
 
@@ -58,7 +60,6 @@ main {
 
 /* Card-left-input ---------------------- */
 .card-left #input-email {
-  display: inline-flex;
   border-radius: 2rem;
   border: 2px var(--color-pink) solid;
   box-shadow: 0 0 0 0;
@@ -80,22 +81,25 @@ input::placeholder {
 
 /* Card-left-button ---------------------- */
 .card-left .button {
-  display: inline;
+  background: -webkit-linear-gradient(left, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background: linear-gradient(to right, (0, 80%, 86%), hsl(0, 74%, 74%));
+  padding: 1.1rem 2.8rem;
+  border-radius: 2rem;
+  margin: 40px 0 0 -52px;
+  position: relative;
+  
+  box-shadow: 0 1px 80px 0 var(--color-pink), 0 6px 20px 0 var1(--color-pink);
 }
 
 .card-left .arrow {
   display: inline;
-  background: var(--color-pink);
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  margin-top: 50px;
-  margin-left: -70px;
   width: 25px;
-  height: 20px;
-  
-	filter: invert(0);
+  height: auto;
+  position: absolute;
+  top: 2vh;
+  left: 2.8vw;
+	filter: invert(1);
 }
-
 
 /* Card-right ---------------------- */
 .card-right {
