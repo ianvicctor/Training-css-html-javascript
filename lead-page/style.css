@@ -1,0 +1,19 @@
+/* Global ---------------------- */
+:root {
+    --color-red: hsl(0, 100%, 74%);
+    --color-green: hsl(154, 59%, 51%);
+    --color-blue: hsl(248, 32%, 49%);
+    --color-darkBlue: hsl(249, 10%, 26%);
+    --color-grayishBlue: hsl(246, 25%, 77%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
