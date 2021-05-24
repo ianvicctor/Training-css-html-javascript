@@ -95,10 +95,27 @@ main {
 #second-part .container-form input {
   display: block;
 
+  border: 1px solid hsla(249, 10%, 26%, 0.164);
   width: 30vw;
   padding: 0.8rem;
   margin-top: 1rem;
   border-radius: 0.3rem;
+  opacity: 0.8;
+}
+
+.change-input::-webkit-input-placeholder{
+  color: var(--color-darkBlue);
+  font-weight: bold;
+}
+
+.change-input:focus {
+  border: 10px solid red;
+  border-radius: 0.3rem;
+  /*
+  outline: 1px solid black;
+  border-color: red;
+  font-weight: bolder;
+  outline: 1;*/
 }
 
 #second-part .container-form #button {
@@ -109,6 +126,7 @@ main {
   text-decoration: none;
   width: auto;
   padding: 0.8rem;
+  font-size: 10pt;
 
   border-radius: 0.3rem;
   margin: 1rem 0 1rem 0;
