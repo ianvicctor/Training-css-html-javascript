@@ -1,120 +1,124 @@
+/* Global ---------------------- */
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+  --color-veryDarkBlue: hsl(234, 12%, 34%);
+  --color-grayishBlue: hsl(229, 6%, 66%);
+  --color-veryLightGray: hsl(0, 0%, 98%);
+}
+
 html,
 body {
+  width: 99vw;
+  height: 95vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: white;
+  background: var(--color-veryLightGray);
   font-family: "Poppins", sans-serif;
 }
 
 /* Header ---------------------------------------------- */
 header {
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .weight-normal {
   font-weight: 200;
   font-style: normal;
-  
+  font-size: 20pt;
   margin-bottom: -4px;
 }
 
 .weight-bolder {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.98em;
-
+  font-size: 20pt;
   margin-top: 1px;
+}
+
+h1 {
+  color: var(--color-veryDarkBlue);
+}
+
+h2 {
+  font-size: 12pt;
+  font-weight: 600;
+  color: var(--color-veryDarkBlue)
 }
 
 h3 {
   font-weight: 400;
-  font-size: 15px;
-  color: hsl(229, 6%, 66%);
+  font-size: 8pt;
+  color: var(--color-grayishBlue);
 }
 
 /* Main ---------------------------------------------- */
 main {
-  width: 100vw;
-  height: 100vh;
+  
   background: white;
 }
 
 .container {
   position: absolute;
-  top: 8vh;
+  top: 2vh;
 }
 
-.team-builder {
-  background: hsl(0, 0%, 98%);
-  height: 35vh;
-  width: 25vw;
-  padding: 1rem 2rem;
+.team-builder, .supervisor, .karma, .calculator {
+  background: var(--color-veryLightGray);
+  height: 23vh;
+  width: 17vw;
+  padding: 1rem 1rem;
 
-  border-radius: 0.5rem;
-  border-color: hsl(0, 78%, 62%);
+  border-radius: 0.2rem;
   border-top-style: solid;
 
-  position: absolute;
-  top: 35vh;
-  left: 35vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 12px 15px 0 rgba(0, 0, 0, 0.1);
+}
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.team-builder {  
+  border-color: var(--color-red);
+
+  position: absolute;
+  top: 28vh;
+  left: 40vw;  
 }
 
 .supervisor {
-  background: hsl(0, 0%, 98%);
-  height: 35vh;
-  width: 25vw;
-  padding: 1rem 2rem;
-
-  border-radius: 0.5rem;
-  border-color: hsl(180, 62%, 55%);
-  border-top-style: solid;
-
+  border-color: var(--color-cyan);
+  
   position: absolute;
-  top: 60vh;
-  left: 2vw;
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 45vh;
+  left: 18.5vw;
 }
 
 .calculator {
-  background: hsl(0, 0%, 98%);
-  height: 35vh;
-  width: 25vw;
-  padding: 1rem 2rem;
-
-  border-radius: 0.5rem;
-  border-color: hsl(212, 86%, 64%);
-  border-top-style: solid;
-
+  border-color: var(--color-blue);
+  
   position: absolute;
-  top: 60vh;
-  left: 68vw;
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 45vh;
+  left: 61.5vw;
 }
 
 .karma {
-  background: hsl(0, 0%, 98%);
-  height: 35vh;
-  width: 25vw;
-  padding: 1rem 2rem;
-
-  border-radius: 0.5rem;
-  border-color: hsl(34, 97%, 64%);
-  border-top-style: solid;
+  border-color: var(--color-orange);
 
   position: absolute;
-  top: 80vh;
-  left: 35vw;
+  top: 60vh;
+  left: 40vw;
+}
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.karma .text, .supervisor .text, .calculator .text, .team-builder .text{
+  font-size: 8pt;
 }
 
 img  {
   display: flex;
+  width: 45px;
+  height: auto;
 
   float: right;
   /*margin-left: 20vw;*/
@@ -123,6 +127,9 @@ img  {
 .container p {
   font-weight: 400;
   font-size: 15px;
-  color: hsl(229, 6%, 66%);
+  color: var(--color-grayishBlue);
 }
 
+@media (max-width: 375px) {
+
+}
