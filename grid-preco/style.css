@@ -1,4 +1,3 @@
-/* Global ---------------------- */
 :root {
   --color-greenlemon: #cee367;
   --color-green: #2cb3af;
@@ -15,84 +14,72 @@ body {
   font-family: "Karla", sans-serif;
   width: 100%;
   height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Container ---------------------- */
 main {
-  background: #f0f0f0;
-  display: grid;
-  grid-template-columns: repeat(2, 45vh);
-  grid-template-rows: 40vh 60%;
-  grid-template-areas:
-    "T T"
-    "L R";
-
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
 }
 
-/* Cards  ---------------------- */
 #card-top {
-  grid-area: T;
   background: #fffeff;
 
-  padding: 1rem 2rem;
+  padding: 0rem 1rem 1rem 1rem;
   border-radius: 0.5rem 0.5rem 0 0;
+  text-align: justify;
+  margin-right: 0;
 }
 
 #card-left {
-  grid-area: L;
   background: var(--color-green);
 
-  padding: 1.5rem 2rem;
-  border-radius: 0 0 0 0.5rem;
+  padding: 0rem 1rem 1rem 1rem;
+  border-radius: 0 0 0 0;
 }
 
 #card-right {
-  grid-area: R;
   background: var(--color-greentwo);
 
-  padding: 1.5rem 2rem;
-  border-radius: 0 0 0.5rem 0;
+  padding: 0rem 1rem 1rem 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
-/* Fonts/texts ---------------------- */
 h1 {
-  font-size: 16pt;
+  font-size: 1em;
   font-weight: bolder;
 }
 
 h2 {
-  font-size: 14pt;
+  font-size: 0.8rem;
   font-weight: 700;
+  margin-top: 1rem;
 }
 
 p {
-  font-size: 10pt;
-  font-weight: 400;  
-}
-
-.break {
-  display: block;
+  font-size: 0.6rem;
+  font-weight: 400;
 }
 
 .green {
   color: var(--color-green);
-  
 }
 
 .green-2 {
   color: var(--color-greenlemon);
-  line-height: 1.5;
+  line-height: 1.3;
+  font-size: 0.7rem;
+  text-align: left;
 }
 
 .gray {
+  margin-top: 1rem;
   color: #cdcdcd;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .white {
@@ -108,7 +95,7 @@ p {
 .line-height {
   line-height: 1.5;
   font-weight: 400;
-  font-size: 9pt;
+  font-size: 0.6rem;
 }
 
 .inline {
@@ -118,30 +105,37 @@ p {
 }
 
 #per-month {
-  font-size: 12pt;  
+  font-size: 0.7rem;
   margin-left: 1rem;
+  margin-top: 1rem;
   font-weight: 400;
+  opacity: 0.6;
+}
+
+.no-bottom {
+  margin-bottom: 0;
 }
 
 .full-access {
   margin-top: 0;
   font-weight: 400;
+  font-size: 0.7rem;
 }
 
 .value {
-  font-size: 20pt;
+  font-size: 1.4rem;
 }
 
-/* Button ---------------------- */
 .button {
   display: inline-block;
   text-decoration: none;
+  justify-content: center;
   text-align: center;
   background: #c0de32;
-  padding: .7rem 4.7rem;
-  margin-top: 1rem;  
+  padding: 0.7em 4.7em;
+  margin-top: 1em;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 0.7rem;
   color: white;
   opacity: 0.85;
   border-radius: 0.3rem;
@@ -153,65 +147,156 @@ p {
   opacity: 1;
 }
 
-/* Responsive ---------------------- */
-@media (max-width: 375px) {
-  main {
-    padding: 0.1rem 2rem 3rem 0rem;
+@media (min-width: 501px) and (max-width: 1067px) {
+  body {
+    margin: 0;
   }
 
+  main {
+    max-width: 50vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    margin-left: 100%;
+    width: 50vw;
+    height: 30vh;
+    text-align: center;
+  }
+
+  .inline {
+    display: inline-block;
+    
+  }
+
+  .green, .green-2, .gray {
+    text-align: center;
+  }
+
+  .gray {
+    padding: 0 5.5rem 0 5.5rem;
+  }
+
+  .button {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1068px) {
   .container {
+    display: flex;
+  }
+
+  main {
+    padding: 0;
+    min-height: 0;
     display: grid;
-    grid-template-columns: 70vw;
-    grid-template-rows: 32vh 30vh 32vh;
+    grid-template-columns: repeat(2, 20vw);
+    grid-template-rows: auto auto;
     grid-template-areas:
-      "T"
-      "L"
-      "R";
+      "T T"
+      "L R";
+
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   #card-top {
     grid-area: T;
     background: #fffeff;
 
-    padding: 0rem 1rem 1rem 2rem;
+    padding: 0.5rem 1rem 2rem 2rem;
     border-radius: 0.5rem 0.5rem 0 0;
-    font-size: 10pt;
     margin-right: 0;
-    
   }
 
   #card-left {
     grid-area: L;
     background: var(--color-green);
 
-    padding: 0rem 1rem 1rem 2rem;
-    border-radius: 0 0 0 0;
+    padding: 0.5rem 1rem 2rem 2rem;
+    border-radius: 0 0 0 0.5rem;
   }
 
   #card-right {
     grid-area: R;
     background: var(--color-greentwo);
 
-    padding: 0rem 1rem 1rem 2rem;
-    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1rem 1rem 2rem 2rem;
+    border-radius: 0 0 0.5rem 0;
   }
 
-  /* Fonts ---------------------- */
   h1 {
-    font-size: 12pt;
+    font-size: 1.4rem;
+    font-weight: bolder;
   }
 
   h2 {
-    font-size: 10pt;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   .break {
-    display: inline;
-    text-align: justify;
-    font-size: 8pt;
+    display: block;
+  }
+
+  .green {
+    color: var(--color-green);
+  }
+
+  .green-2 {
+    color: var(--color-greenlemon);
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+
+  .gray {
+    color: #cdcdcd;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+
+  .white {
+    color: white;
+    font-weight: 700;
+  }
+
+  .white-trans {
+    color: #c2f4fe;
+    font-weight: 700;
+  }
+
+  .line-height {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   #per-month {
-    font-size: 10pt;
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: 400;
+  }
+
+  .full-access {
+    margin-top: 0;
+    font-weight: 400;
+  }
+
+  .value {
+    font-size: 2rem;
   }
 }
