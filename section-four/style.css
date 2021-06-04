@@ -11,8 +11,8 @@
 
 html,
 body {
-  width: 99vw;
-  height: 95vh;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,23 +20,26 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Header ---------------------------------------------- */
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .weight-normal {
   font-weight: 200;
   font-style: normal;
-  font-size: 20pt;
-  margin-bottom: -4px;
+  font-size: 7vw;
+  margin-bottom: -.8em;
 }
 
 .weight-bolder {
   font-weight: 600;
-  font-size: 20pt;
-  margin-top: 1px;
+  font-size: 7vw;
 }
 
 h1 {
@@ -44,25 +47,33 @@ h1 {
 }
 
 h2 {
-  font-size: 12pt;
+  font-size: 5.2vw;
   font-weight: 600;
   color: var(--color-veryDarkBlue);
+  margin: -.5em 0 .2em 0;
 }
 
 h3 {
   font-weight: 400;
-  font-size: 8pt;
+  font-size: 4vw;
   color: var(--color-grayishBlue);
+  margin: 0 8vw 5vh 8vw;
+  text-align: center;
 }
 
-/* Main ---------------------------------------------- */
+br {
+  display: none;
+}
+
 main {
   background: white;
 }
 
 .container {
-  position: absolute;
-  top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
 }
 
 .team-builder,
@@ -70,10 +81,10 @@ main {
 .karma,
 .calculator {
   background: var(--color-veryLightGray);
-  height: 23vh;
-  width: 17vw;
-  padding: 1rem 1rem;
-
+  height: auto;
+  width: 65vw;
+  padding: 1em 1.1em;
+  margin: 0 8vw .7em 8vw;
   border-radius: 0.2rem;
   border-top-style: solid;
 
@@ -82,150 +93,115 @@ main {
 
 .team-builder {
   border-color: var(--color-red);
-
-  position: absolute;
-  top: 28vh;
-  left: 40vw;
 }
 
 .supervisor {
   border-color: var(--color-cyan);
-
-  position: absolute;
-  top: 45vh;
-  left: 18.5vw;
 }
 
 .calculator {
   border-color: var(--color-blue);
-
-  position: absolute;
-  top: 45vh;
-  left: 61.5vw;
 }
 
 .karma {
   border-color: var(--color-orange);
-
-  position: absolute;
-  top: 60vh;
-  left: 40vw;
 }
 
 .karma .text,
 .supervisor .text,
 .calculator .text,
 .team-builder .text {
-  font-size: 8pt;
+  font-size: 3.2vw;
+  margin: auto;
+  opacity: 0.6;
 }
 
 img {
   display: flex;
-  width: 45px;
+  width: 13vw;
   height: auto;
 
   float: right;
-  /*margin-left: 20vw;*/
 }
 
-.container p {
-  font-weight: 400;
-  font-size: 15px;
-  color: var(--color-grayishBlue);
-}
-
-@media (max-width: 375px) {
+@media (min-width: 501px) {
   header {
-    text-align: center;
     margin-top: 5vh;
   }
 
   .weight-normal {
-    font-size: 10pt;
+    font-size: 2vw;
+    margin-bottom: -.5vh;
   }
 
   .weight-bolder {
-    font-size: 10pt;
+    font-size: 2vw;
+    margin-top: 1px;
   }
 
   h2 {
-    font-size: 8pt;
-    font-weight: 600;
+    font-size: 1.1vw;
   }
 
   h3 {
-    font-size: 6pt;
-    text-align: justify;
-    margin: 0 1.5rem 0 1.5rem;
+    font-size: .9vw;
   }
 
   br {
-    display: none;
+    display: block;
+  }
+
+  .container {
+    position: absolute;
+    top: 2vh;
+  }
+  
+  .team-builder,
+  .supervisor,
+  .karma,
+  .calculator {
+    background: var(--color-veryLightGray);
+    height: 23vh;
+    width: 17vw;
+    padding: 1rem 1rem;
+  
+    border-radius: 0.2rem;
+    border-top-style: solid;
+  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 12px 15px 0 rgba(0, 0, 0, 0.1);
   }
 
   .karma .text,
 .supervisor .text,
 .calculator .text,
 .team-builder .text {
-  font-size: 5pt;
+  font-size: .7vw;
 }
-
-header {
-  margin-top: 0vh;
-}
-
-    .container {
-      position: absolute;
-      top: -8vh;
-      left: -1vw;
+  
+  .team-builder {position: absolute;
+    top: 28vh;
+    left: 40vw;
   }
-
-  .team-builder {
-    grid-area: T;
-    position: absolute;
-    top: 46vh;
-    left: 12vw;
-    padding: 0.1rem 0.8rem;
+  
+  .supervisor {position: absolute;
+    top: 45vh;
+    left: 18.5vw;
   }
-
-  .supervisor {
-    grid-area: S;
-    position: absolute;
-    top: 25vh;
-    left: 12vw;
-    padding: 0.1rem 0.8rem;
+  
+  .calculator {position: absolute;
+    top: 45vh;
+    left: 61.5vw;
   }
-
-  .karma {
-    grid-area: K;
-    position: absolute;
-    top: 67vh;
-    left: 12vw;
-    padding: 0.1rem 0.8rem;
-  }
-
-  .calculator {
-    grid-area: C;
-    position: absolute;
-    top: 88vh;
-    left: 12vw;
-    padding: 0.1rem 0.8rem;
-  }
-
-  .team-builder,
-  .supervisor,
-  .karma,
-  .calculator {
-    height: 18vh;
-    width: 64vw;
+  
+  .karma {position: absolute;
+    top: 60vh;
+    left: 40vw;
   }
 
   img {
     display: flex;
-    width: 30px;
+    width: 3.5vw;
     height: auto;
-  
-    float: right;
-    /*margin-left: 20vw;*/
+    justify-items: end;
   }
 }
