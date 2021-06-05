@@ -152,8 +152,9 @@ img {
   }
 
   .container {
+    flex-direction: none;
     position: absolute;
-    top: 2vh;
+    top: 5vh;
   }
   
   .team-builder,
@@ -164,7 +165,8 @@ img {
     height: 23vh;
     width: 17vw;
     padding: 1rem 1rem;
-  
+    margin: 0;
+
     border-radius: 0.2rem;
     border-top-style: solid;
   
@@ -176,24 +178,29 @@ img {
 .calculator .text,
 .team-builder .text {
   font-size: .7vw;
+  margin-bottom: 4em;
 }
   
-  .team-builder {position: absolute;
+  .team-builder {
+    position: absolute;
     top: 28vh;
     left: 40vw;
   }
   
-  .supervisor {position: absolute;
+  .supervisor {
+    position: absolute;
     top: 45vh;
     left: 18.5vw;
   }
   
-  .calculator {position: absolute;
+  .calculator {
+    position: absolute;
     top: 45vh;
     left: 61.5vw;
   }
   
-  .karma {position: absolute;
+  .karma {
+    position: absolute;
     top: 60vh;
     left: 40vw;
   }
@@ -202,6 +209,7 @@ img {
     display: flex;
     width: 3.5vw;
     height: auto;
-    justify-items: end;
+    
+    float: right;
   }
 }
