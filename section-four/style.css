@@ -33,13 +33,13 @@ header {
 .weight-normal {
   font-weight: 200;
   font-style: normal;
-  font-size: 7vw;
+  font-size: clamp(.7em, .7em + 1vw, 1.2em);
   margin-bottom: -.8em;
 }
 
 .weight-bolder {
   font-weight: 600;
-  font-size: 7vw;
+  font-size: clamp(.7em, .7em + 1vw, 1.2em);
 }
 
 h1 {
@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5.2vw;
+  font-size: clamp(.6em, .6em + 1vw, 1.1em);
   font-weight: 600;
   color: var(--color-veryDarkBlue);
   margin: -.5em 0 .2em 0;
@@ -55,7 +55,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 4vw;
+  font-size: clamp(.4em, .4em + 1vw, .9em);
   color: var(--color-grayishBlue);
   margin: 0 8vw 5vh 8vw;
   text-align: center;
@@ -84,7 +84,7 @@ main {
   height: auto;
   width: 65vw;
   padding: 1em 1.1em;
-  margin: 0 8vw .7em 8vw;
+  margin: 1vw 8vw .7em 8vw;
   border-radius: 0.2rem;
   border-top-style: solid;
 
@@ -111,7 +111,7 @@ main {
 .supervisor .text,
 .calculator .text,
 .team-builder .text {
-  font-size: 3.2vw;
+  font-size: clamp(.3em, .3em + 1vw, .8em);
   margin: auto;
   opacity: 0.6;
 }
@@ -120,31 +120,31 @@ img {
   display: flex;
   width: 13vw;
   height: auto;
-
+  margin-top: .2em;
   float: right;
 }
 
-@media (min-width: 501px) {
+@media (min-width: 910px) {
   header {
     margin-top: 5vh;
   }
 
   .weight-normal {
-    font-size: 2vw;
+    font-size: clamp(1.8em, 1.8em + .1vw, 2.3em);
     margin-bottom: -.5vh;
   }
 
   .weight-bolder {
-    font-size: 2vw;
+    font-size: clamp(1.8em, 1.8em + .1vw, 2.3em);
     margin-top: 1px;
   }
 
   h2 {
-    font-size: 1.1vw;
+    font-size: clamp(1em, 1em + .1vw, 1.5em);
   }
 
   h3 {
-    font-size: .9vw;
+    font-size: clamp(.8em, .8em + 1.vw, 1.3em);
   }
 
   br {
@@ -154,7 +154,7 @@ img {
   .container {
     flex-direction: none;
     position: absolute;
-    top: 5vh;
+    top: 10vh;
   }
   
   .team-builder,
@@ -164,7 +164,7 @@ img {
     background: var(--color-veryLightGray);
     height: 23vh;
     width: 17vw;
-    padding: 1rem 1rem;
+    padding: 1em 1em;
     margin: 0;
 
     border-radius: 0.2rem;
@@ -177,7 +177,7 @@ img {
 .supervisor .text,
 .calculator .text,
 .team-builder .text {
-  font-size: .7vw;
+  font-size: clamp(.6em, .6em + .1vw, 1.1em);
   margin-bottom: 4em;
 }
   
