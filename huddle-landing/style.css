@@ -9,7 +9,6 @@ body {
   height: auto;
   font-family: "Open Sans", sans-serif;
   background: hsl(257, 40%, 49%) url("./images/bg-mobile.svg") no-repeat fixed;
-  background-position: -100px -110px;
 }
 
 header {
@@ -40,7 +39,7 @@ header h1 {
 }
 
 .container picture img {
-    display: flex;
+  display: flex;
   width: 80vw;
   height: auto;
   text-align: center;
@@ -100,7 +99,7 @@ footer {
 }
 
 footer a {
-    margin: 0 .7em 0 .55em;
+  margin: 0 0.7em 0 0.55em;
 }
 
 footer img {
@@ -111,4 +110,105 @@ footer img {
   opacity: 0.822;
   filter: invert(1);
   padding: 0.3rem;
+}
+
+@media (min-width: 1001px) {
+  body {
+    width: 93%;
+    height: auto;
+    background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat
+      fixed;
+    margin: 4em;
+  }
+
+  header {
+    width: 85%;
+    margin-left: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  .container {
+      margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "I T"
+      "F F";
+  }
+
+  .container picture {
+    grid-area: I;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .container picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .text {
+    grid-area: T;
+    margin: 0 0 0 4vw;
+  }
+
+  .container .text h1 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 3.5rem;
+    text-align: left;
+  }
+
+  .container .text p {
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: left;
+  }
+
+  .container .text p br {
+      display: block;
+  }
+
+  .container section .button {
+    display: inline-block;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight:400;
+    text-decoration: none;
+
+    background: white;
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  footer {
+      
+    grid-area: F;
+    display: flex;
+    flex-direction: row;
+    width: 93%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  footer a {
+    margin-right: .1em;
+  }
+
+  footer img {
+    width: 17px;
+    height: auto;
+    margin-right: .5em;
+    padding: .5em;
+    border: 1px solid black;
+    border-radius: 4rem;
+    opacity: 0.822;
+    filter: invert(1);
+  }
 }
