@@ -14,42 +14,46 @@
   </head>
   <body>
     <main>
-      <div class="card-left">
         <img class="logo" src="./images/logo.svg" alt="logo da Base Apparel" />
-        <h1 id="text-pink">WE'RE</h1>
-        <h1 id="text-normal">
-          COMING <br />
-          SOON
-        </h1>
-        <p>
-          Hello fellow shoppers! We're currently building our new
-          <br />fashion store. Add your email below to stay up-to-date with
-          <br />announcements and our launch deals.
-        </p>
-        <div class="form-container">
+        <picture>
+          <source
+            media="(max-width: 799px)"
+            srcset="./images/hero-mobile.jpg"
+          />
+          <source media="(min-width: 800px)" srcset="./images/hero-desktop.jpg" />
+          <img
+            class="mulher"
+            src="./images/hero-desktop.jpg"
+            alt="Foto da atriz fazendo propaganda para a Base Apparel"
+          />
+        </picture>
+        <div class="container-text">
+          <h1 id="text-pink">WE'RE</h1>
+          <h1 id="text-normal">
+            COMING <br />
+            SOON
+          </h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new
+            <br />fashion store. Add your email below to stay up-to-date with
+            <br />announcements and our launch deals.
+          </p>
           <form action="">
-              <input
-                type="email"
-                name="input-email"
-                id="input-email"
-                placeholder="Email Adress"
-              />
+            <input
+              type="email"
+              name="input-email"
+              id="input-email"
+              placeholder="Email Adress"
+            />
             <a class="button" href="">
-                <img
-                  class="arrow"
-                  src="./images/icon-arrow.svg"
-                  alt="imagem da seta para mandar o email"
-                          />
+              <img
+                class="arrow"
+                src="./images/icon-arrow.svg"
+                alt="imagem da seta para mandar o email"
+              />
             </a>
           </form>
         </div>
-      </div>
-      <div class="card-right">
-        <img
-          src="./images/hero-desktop.jpg"
-          alt="Foto da atriz fazendo propagando para a Base Apparel"
-        />
-      </div>
     </main>
   </body>
 </html>

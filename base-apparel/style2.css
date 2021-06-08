@@ -1,0 +1,112 @@
+/* Global ---------------------- */
+:root {
+  --color-pink: hsl(0, 36%, 70%);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  font: 16px "Josefin Sans", sans-serif;
+}
+
+/* Main ---------------------- */
+main {
+  display: grid;
+  grid-template-columns: 2, 70vw 30vw;
+  grid-template-rows: 100vh;
+  grid-template-areas: "L R";
+}
+
+/* Card-left ---------------------- */
+.card-left {
+  grid-area: L;
+  width: 55vw;
+  background: -webkit-linear-gradient(left, hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+  background: linear-gradient(to right, hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+}
+
+.card-left .logo {
+  display: flex;
+  margin: 50px 0 0 130px;
+}
+
+.card-left #text-pink {
+  color: var(--color-pink);
+  font-size: 45pt;
+  font-weight: 100;
+  letter-spacing: 15px;
+
+  margin: 100px 0 0 130px;
+}
+
+.card-left #text-normal {
+  color: hsl(0, 6%, 24%);
+  font-size: 45pt;
+  letter-spacing: 15px;
+
+  margin: 0 0 0 130px;
+}
+
+.card-left p {
+  color: var(--color-pink);
+  line-height: 1.6;
+
+  margin: 30px 0 0 130px;
+}
+
+/* Card-left-input ---------------------- */
+.card-left #input-email {
+  border-radius: 2rem;
+  border: 2px var(--color-pink) solid;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  opacity:  0.5;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 2rem;
+  width: 25vw;
+  margin: 40px 0 0 130px;
+}
+
+input::placeholder {
+  color: var(--color-pink);
+  font-weight: bolder;
+  font-size: 11pt;
+}
+
+/* Card-left-button ---------------------- */
+.card-left .button {
+  background: -webkit-linear-gradient(left, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background: linear-gradient(to right, (0, 80%, 86%), hsl(0, 74%, 74%));
+  padding: 1.1rem 2.8rem;
+  border-radius: 2rem;
+  margin: 40px 0 0 -52px;
+  position: relative;
+  
+  box-shadow: 0 1px 80px 0 var(--color-pink), 0 6px 20px 0 var1(--color-pink);
+}
+
+.card-left .arrow {
+  display: inline;
+  width: 25px;
+  height: auto;
+  position: absolute;
+  top: 2vh;
+  left: 2.8vw;
+	filter: invert(1);
+}
+
+/* Card-right ---------------------- */
+.card-right {
+  grid-area: R;
+}
+
+.card-right img {
+  width: 100%;
+  height: 100%;
+}
