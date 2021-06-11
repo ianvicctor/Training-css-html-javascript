@@ -35,19 +35,19 @@ main .logo {
 
 .container-text #text-pink {
   color: var(--color-pink);
-  font-size: 2.5em;
+  font-size: clamp(2.5em, 2.5em + 1vw, 3em);
   font-weight: 300;
-  letter-spacing: 2.5vw;
+  letter-spacing: .2em;
   margin-bottom: 0;
   text-align: center;
 }
 
 .container-text #text-normal {
   color: hsl(0, 6%, 24%);
-  font-size: 2.5em;
+  font-size: clamp(2.5em, 2.5em + 1vw, 3em);
   font-weight: bolder;
 
-  letter-spacing: 2.5vw;
+  letter-spacing: .2em;
   margin: 0;
   text-align: center;
 }
@@ -55,7 +55,7 @@ main .logo {
 .container-text p {
   color: var(--color-pink);
   opacity: 0.8;
-  font-size: 1;
+  font-size: clamp(.7em, .5em + 1vw, 1.5em);
   font-weight: 400;
   line-height: 1.6;
 
@@ -88,7 +88,7 @@ form {
 input::placeholder {
   color: var(--color-pink);
   font-weight: bolder;
-  font-size: 1em;
+  font-size: clamp(.7em, .5em + 1vw, 1.2em);
 }
 
 .container-text a {
@@ -165,14 +165,14 @@ input::placeholder {
   }
 
   .container-text #text-pink {
-    font-size: 3.5em;
+    font-size: clamp(3.5em, 3.5em + 1vw, 4em);
     font-weight: 100;
     letter-spacing: 1vw;
     text-align: left;
   }
 
   .container-text #text-normal {
-    font-size: 4em;
+    font-size: clamp(4em, 4em + 1vw, 4.5em);
     letter-spacing: 1vw;
     text-align: left;
   }
