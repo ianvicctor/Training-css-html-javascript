@@ -126,7 +126,7 @@ br {
   text-align: center;
   font-size: clamp(0.3em, 0.4em, 0.9em);
 
-  margin-top: 1.5em;
+  margin-top: 2.8vh;
 }
 
 #second-part .container-form span {
@@ -134,46 +134,77 @@ br {
   font-weight: bold;
 }
 
-@media (min-width: 376px) {
-  body {
-    padding: 0;
+@media (min-width: 501px) {
+  #first-part h1 {
+    font-size: clamp(1.6em, 1.6em, 2.1em);
     margin: 0;
   }
 
-  main {
-    background: url(./images/bg-intro-desktop.png) var(--color-red);
+  #first-part p {
+    margin-top: 3vh;
+    font-size: clamp(.8em, .8em, 1.3em);
+  }
 
+  #second-part .spotlight {
+    font-size: clamp(.8em, .8em, 1.3em);
+  }
+
+  .change-input::-webkit-input-placeholder {
+    font-size: clamp(.8em, .8em, 1.3em);
+  }
+
+  #second-part .container-form #button {
+    font-size: clamp(.7em, .7em, 1.2em)
+  }
+
+  #second-part .container-form #warning {
+    font-size: clamp(0.6em, 0.6em, 1em);
+  }
+}
+
+@media (min-width: 820px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background: url(./images/bg-intro-desktop.png) var(--color-red);
+  }
+
+  main {
     display: grid;
-    grid-template-columns: repeat(2, 50vw);
-    grid-template-rows: 50vw;
+    grid-template-columns: 2, 50% 50%;
     grid-template-areas: "L1 R1";
   }
 
   #first-part {
     grid-area: L1;
-
-    padding: 10rem;
+    padding: 25vh 0em 25vh 10vw;
   }
 
   #first-part h1 {
+    
     color: white;
-    margin-top: 25%;
+    margin-top: 10%;
+    margin-bottom: 2.5vh;
 
-    font-size: 28pt;
+    font-size: clamp(2.1em, 2.5em, 2.5em);
     font-weight: bolder;
+    text-align: left;
+  }
+
+  br {
+    display: block;
   }
 
   #first-part p {
     width: 39vw;
-    margin-top: 3vh;
     color: white;
-    font-size: 10pt;
+    font-size: clamp(0.5em, 1em, 1em);
+    text-align: left;
   }
   
   /* Second-part ---------------------- */
   #second-part {
     grid-area: R1;
-  
     margin-top: 15vh;
   }
   
@@ -182,12 +213,12 @@ br {
     display: inline-block;
     color: white;
     text-align: center;
-    font-size: 14px;
+    font-size: clamp(0.5em, .8em, 1em);
   
     width: 35vw;
-    padding: 1rem 1rem;
+    padding: 1em 1em;
     margin-bottom: 3vh;
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
   }
   
   #second-part .spotlight p {
@@ -202,22 +233,21 @@ br {
   #second-part .container-form {
     background: white;
   
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
   
-    padding: 1rem 2rem 0 2rem;
+    padding: 1vh 4vh 1vh 4vh;
     width: 35vw;
-    height: 60vh;
   }
   
   #second-part .container-form input {
     display: block;
   
     border: 1px solid hsla(249, 10%, 26%, 0.164);
-    width: 30vw;
-    padding: 0.8rem;
-    margin-top: 1rem;
-    border-radius: 0.3rem;
+    padding: 2vh;
+    margin-top: 2vh;
+    border-radius: 0.3em;
     opacity: 0.8;
+    font-size: clamp(0.7em, 1.2em, 1.2em);
   }
   
   .change-input::-webkit-input-placeholder{
@@ -227,7 +257,7 @@ br {
   
   .change-input:focus {
     border: 10px solid red;
-    border-radius: 0.3rem;
+    border-radius: 0.3em;
     /*
     outline: 1px solid black;
     border-color: red;
@@ -242,11 +272,11 @@ br {
     text-align: center;
     text-decoration: none;
     width: auto;
-    padding: 0.8rem;
-    font-size: 10pt;
+    padding: 2vh;
+    font-size: clamp(.4em, .9em, .9em);
   
-    border-radius: 0.3rem;
-    margin: 1rem 0 1rem 0;
+    border-radius: 0.3em;
+    margin: 1vh 0 1vh 0;
   }
   
   #second-part .spotlight,
@@ -258,7 +288,8 @@ br {
   #second-part .container-form #warning {
     color: var(--color-grayishBlue);
     text-align: center;
-    font-size: 7pt;
+    font-size: clamp(.1 em, .6em, .6em);
+    margin-bottom: 2vh;
   }
   
   #second-part .container-form span {
