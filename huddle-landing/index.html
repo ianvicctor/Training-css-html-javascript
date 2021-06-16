@@ -39,19 +39,21 @@
           voice, but so does your audience. Create connections with <br />
           your users as you engage in genuine discussion.
         </p>
-        <a class="button" href="*">Register</a>
+        <a id="button" class="button" href="*" onMouseOver="mudarCor()">Register</a>
       </section>
       <footer class="social-redes">
         <a class="icon-face" href="http://www.facebook.com"
-          ><img src="./images/logo-facebook.svg" alt="Link para o Facebook"
+          ><img src="./images/logo-facebook.svg" onload="fetchSvg(this)" alt="Link para o Facebook"
         /></a>
         <a class="icon-twitter" href="http://www.twitter.com"
-          ><img src="./images/logo-twitter.svg" alt="Link para o Twitter"
+          ><img src="./images/logo-twitter.svg" onload="fetchSvg(this)" alt="Link para o Twitter"
         /></a>
         <a class="icon-insta" href="http://www.instagram.com"
-          ><img src="./images/logo-instagram.svg" alt="Link para o Instagram"
+          ><img src="./images/logo-instagram.svg" onload="fetchSvg(this)" alt="Link para o Instagram"
         /></a>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

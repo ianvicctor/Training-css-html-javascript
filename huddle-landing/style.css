@@ -5,8 +5,8 @@ html {
 }
 
 body {
-  width: 93%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   font-family: "Open Sans", sans-serif;
   background: hsl(257, 40%, 49%) url("./images/bg-mobile.svg") no-repeat fixed;
 }
@@ -15,26 +15,23 @@ header {
   font-family: "Poppins", sans-serif;
   color: white;
   font-weight: bolder;
-  width: 93vw;
   margin: 4vh 4vw 6vh 14vw;
 }
 
 header h1 {
-  font-size: clamp(1.3em, 1.3em, 1.8em);
+  font-size: clamp(1.1em, 1.2em, 1.7em);
   margin-bottom: 2vh;
+  
 }
 
 .container {
   display: flex;
-  width: 93vw;
   text-align: center;
   flex-direction: column;
   margin: 0 4vw 0 4vw;
 }
 
 .container picture {
-  width: 90%;
-
   margin: 0 8vw 1vh 8vw;
 }
 
@@ -52,16 +49,16 @@ header h1 {
 }
 
 .container .text h1 {
-  font-size: clamp(1.2em, 1.2em, 1.7em);
+  font-size: clamp(1.1em, 1.2em, 1.7em);
+  font-weight: bolder;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 1.5em;
 }
 
 .container .text p {
   color: rgba(255, 255, 255, 0.822);
-  font-size: clamp(0.8em, 0.8em, 1.3em);
-  line-height: 1.2rem;
-  width: 95%;
+  font-size: clamp(.7em, .8em, 1.3em);
+  line-height: 1.5em;
   text-align: center;
 }
 
@@ -83,33 +80,30 @@ header h1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   padding: 1em 6em;
-  font-size: clamp(0.65em, 0.65em, 1.1em);
+  font-size: clamp(.5em, .6em, 1.1em);
   text-align: center;
   justify-content: center;
 }
 
 footer {
   display: flex;
-  width: 100%;
   margin: 0 0 0 0;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 footer a {
-  margin: 0 0.7em 0 0.55em;
+  margin: 0 .25em 0 .25em;
 }
 
 footer img {
-  width: 100%;
+  width: .7em;
   height: auto;
-  border: 1px solid black;
+  border: .5px solid black;
   border-radius: 4rem;
   opacity: 0.822;
   filter: invert(1);
-  padding: 0.3rem;
+  padding: .3em;
 }
 
 @media (min-width: 1001px) {
