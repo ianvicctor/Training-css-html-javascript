@@ -38,22 +38,21 @@
             <br />fashion store. Add your email below to stay up-to-date with
             <br />announcements and our launch deals.
           </p>
-          <form action="">
+          <form action="" id="form">
             <input
               type="email"
-              name="input-email"
-              id="input-email"
+              name="email"
+              id="email"
               placeholder="Email Adress"
             />
-            <a class="button" href="">
-              <img
-                class="arrow"
-                src="./images/icon-arrow.svg"
-                alt="imagem da seta para mandar o email"
-              />
-            </a>
+            <button type="button" value="" id="button" onclick="verificarEmail()"><img id="arrow" src="./images/icon-arrow.svg" alt="ícone da seta"></button>
           </form>
+          <div id="res"></div>
         </div>
     </main>
+    <script src="script.js"></script>
+
+      
+
   </body>
 </html>

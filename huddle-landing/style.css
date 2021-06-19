@@ -75,7 +75,7 @@ header h1 {
   background: white;
   color: hsl(257, 40%, 49%);
   border-radius: 2rem;
-  margin: 1vh 0 9vh 0;
+  margin: 1vh 0 6vh 0;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -83,6 +83,12 @@ header h1 {
   font-size: clamp(.5em, .6em, 1.1em);
   text-align: center;
   justify-content: center;
+}
+
+.container section .button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  cursor: pointer;
 }
 
 footer {
@@ -104,6 +110,10 @@ footer img {
   opacity: 0.822;
   filter: invert(1);
   padding: .3em;
+}
+
+footer img:hover {
+  filter: invert(0);
 }
 
 @media (min-width: 1001px) {
