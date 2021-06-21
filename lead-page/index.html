@@ -30,12 +30,21 @@
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </p>
         <div class="container-form">
-          <form action="">
-            <input class="change-input" type="text" name="" id="" placeholder="First Name" />
-            <input class="change-input" type="text" name="" id="" placeholder="Last Name" />
-            <input class="change-input" type="text" name="" id="" placeholder="Email Address" />
-            <input class="change-input" type="password" name="" id="" placeholder="Password" />
-            <a id="button" href="">CLAIM YOUR FREE TRIAL</a>
+          <form action="" id="form">
+            <input class="changeInput" type="text" name="firstName" id="firstName" placeholder="First Name" />
+            <div class="res" id="resFN"></div>
+            
+            <input class="changeInput" type="text" name="lastName" id="lastName" placeholder="Last Name" />
+            <div class="res" id="resLN"></div>
+
+            <input class="changeInput" type="text" name="email" id="email" placeholder="Email Address" />
+            <div class="res" id="resEM"></div>
+
+            <input class="changeInput" type="password" name="password" id="password" placeholder="Password" />
+            <div class="res" id="resPA"></div>
+            
+            <button type="button" value="" id="button" onclick="verificarDados()">CLAIM YOUR FREE TRIAL</button>
+            
             <div id="warning">
               By clicking the button, you are agreeing to our
               <span>Terms and Services</span>
@@ -44,5 +53,6 @@
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

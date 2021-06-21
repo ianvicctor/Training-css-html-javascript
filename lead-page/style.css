@@ -86,24 +86,32 @@ br {
   border-radius: 0.3em;
   opacity: 0.8;
   padding: 0.8em 0 0.8em 0.8em;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.3em;
   width: 99.5%;
 }
 
-.change-input::-webkit-input-placeholder {
+.changeInput::-webkit-input-placeholder {
   color: var(--color-darkBlue);
   font-weight: bold;
   font-size: clamp(0.6em, 0.7em, 1.2em);
 }
 
-.change-input:focus {
-  border: 1em solid red;
+.changeInput:focus {
+  outline: none !important;
+  border: 1px solid black !important;
   border-radius: 0.3em;
-  /*
-    outline: 1px solid black;
-    border-color: red;
-    font-weight: bolder;
-    outline: 1;*/
+  font-weight: 600;
+  font-size: 1em !important;
+}
+
+div .res {
+  color:hsl(0, 100%, 74%);  
+  font-size: .6em;
+  text-align: right;
+  font-style: italic;
+  font-weight: 500;
+
+  margin: 0;
 }
 
 #second-part .container-form #button {
@@ -111,10 +119,12 @@ br {
   background: var(--color-green);
   color: white;
   text-align: center;
-  text-decoration: none;
-  width: auto;
+  width: 100%;
   padding: 1em 0 0.5em 0;
+  margin-top: 1em;
   font-size: clamp(0.5em, 0.6em, 1.1em);
+  border: none;
+  cursor: pointer;
 
   border-radius: 0.3em;
 
@@ -149,7 +159,7 @@ br {
     font-size: clamp(.8em, .8em, 1.3em);
   }
 
-  .change-input::-webkit-input-placeholder {
+  .changeInput::-webkit-input-placeholder {
     font-size: clamp(.8em, .8em, 1.3em);
   }
 
@@ -250,33 +260,9 @@ br {
     font-size: clamp(0.7em, 1.2em, 1.2em);
   }
   
-  .change-input::-webkit-input-placeholder{
+  .changeInput::-webkit-input-placeholder{
     color: var(--color-darkBlue);
     font-weight: bold;
-  }
-  
-  .change-input:focus {
-    border: 10px solid red;
-    border-radius: 0.3em;
-    /*
-    outline: 1px solid black;
-    border-color: red;
-    font-weight: bolder;
-    outline: 1;*/
-  }
-  
-  #second-part .container-form #button {
-    display: block;
-    background: var(--color-green);
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    width: auto;
-    padding: 2vh;
-    font-size: clamp(.4em, .9em, .9em);
-  
-    border-radius: 0.3em;
-    margin: 1vh 0 1vh 0;
   }
   
   #second-part .spotlight,
